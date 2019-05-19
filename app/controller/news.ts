@@ -16,6 +16,7 @@ export default class NewsController extends Controller {
    */
   public async index() {
     const { ctx } = this;
+
     const list = await ctx.service.newsServices.getNewsList();
     // const mongo = ctx.app.mongo;
     // 查询
